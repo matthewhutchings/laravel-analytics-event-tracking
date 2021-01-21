@@ -7,8 +7,8 @@ use Illuminate\Support\Str;
 
 class ClientIdSession implements ClientIdRepository
 {
-    private Store $session;
-    private string $key;
+    private $session;
+    private $key;
 
     public function __construct(Store $session, string $key)
     {
